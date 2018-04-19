@@ -1,0 +1,18 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: $content-height;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow-x: hidden;
+  position: relative;
+  background-color: $main-background-color;
+  outline: 1px solid #22b2ff;
+}
+
+@media (min-width: $desctop-width) {
+  .content {
+    padding: 0 30px;
+  }
+}

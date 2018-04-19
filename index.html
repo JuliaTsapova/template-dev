@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Test template</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li>
+            <label class="btn" for="show-left" tabindex="0">Show left panel</label>
+          </li>
+          <li>
+            <label class="btn" for="show-right" tabindex="0">Show right panel</label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="content">
+        <h2 class="visually-hidden">Content block</h2>
+        <section class="page-description">
+          <h2 class="visually-hidden">Page description</h2>
+        </section>
+        <section class="visible-block">
+          <h2 class="visually-hidden">Always visible block</h2>
+        </section>
+        <input class="show-input show-input--left visually-hidden" type="checkbox" name="show-left" id="show-left">
+        <aside class="aside-panel aside-panel--left"></aside>
+        <input class="show-input show-input--right visually-hidden" type="checkbox" name="show-right" id="show-right">
+        <aside class="aside-panel aside-panel--right"></aside>
+      </section>
+    </main>
+    <footer class="main-footer"></footer>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.main-footer {
+  min-height: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff3cd;
+  outline: 1px solid #fcd457;
+}
+
+@media (min-width: $desctop-width) {
+  .main-footer {
+    max-width: $desctop-width;
+    margin: 0 auto;
+    left: calc(50% - 512px);
+  }
+}

@@ -1,0 +1,21 @@
+.btn {
+  display: block;
+  width: 124px;
+  padding: 5px 0;
+  font-size: 14px;
+  text-align: center;
+  color: #cb782e;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fdd8b7;
+
+  &:hover,
+  &focus {
+    background-color: #fecb9e;
+    color: #cc6c17;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
