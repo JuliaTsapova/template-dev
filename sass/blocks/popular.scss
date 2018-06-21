@@ -1,0 +1,157 @@
+.popular {
+  max-width: 320px;
+  outline: 1px solid #e2e2e2;
+  padding: 8px;
+  margin: 0 auto 20px auto;
+}
+
+.popular__order-btn {
+  margin: 14px auto 0px;
+  padding: 8px 16px;
+}
+
+.popular h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.popular img {
+  display: block;
+  margin: 0 auto;
+}
+
+.popular__table {
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.popular__table tr {
+  height: 30px;
+}
+
+.popular__table tr td:nth-child(1) {
+  font-weight: 700;
+}
+
+.popular__table tr td:nth-child(2) {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.popular__catalog {
+  text-align: center;
+}
+
+.popular__catalog ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.popular__catalog a {
+  text-decoration: none;
+  color: #5b9bd5;
+  position: relative;
+  font-weight: 700;
+}
+
+.popular__catalog li {
+  padding: 7px;
+}
+
+.popular__catalog p {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 36px;
+  margin-bottom: 0;
+}
+
+
+//.popular__catalog a::after {
+//  content: "";
+//  display: block;
+//  width: 100%;
+//  height: 2px;
+//  background: #d6d6d6;
+//  position: absolute;
+//  bottom: -3px;
+//}
+
+.popular__preview {
+  min-height: 220px;
+  background-image: url("http://via.placeholder.com/280x200");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.popular__preview ul {
+  list-style: none;
+  margin: 0;
+  background: rgba(255, 255, 255, .3);
+  padding: 10px 30px 10px 10px;
+  max-width: 240px;
+  border: 1px solid #3f83c1;
+}
+
+.popular__preview ul li:first-child {
+  margin-bottom: 10px;
+}
+
+.popular__preview ul li {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3f83c1;
+}
+
+.popular__price-btn {
+  text-decoration: none;
+  padding: 8px;
+  text-align: center;
+  width: 178px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .popular__catalog {
+    order: -4;
+    text-align: left;
+    margin-right: auto;
+  }
+
+  .popular:first-child {
+    order: -3;
+  }
+
+  .popular:nth-child(2) {
+    order: -2;
+  }
+
+  .popular__preview {
+    order: -1;
+  }
+
+  .popular__catalog p {
+    margin-bottom: 26px;
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .popular__catalog li {
+    padding-bottom: 16px;
+  }
+
+  .popular__preview {
+    margin: 0;
+    min-width: 284px;
+    max-height: 278px;
+    margin-right: auto;
+  }
+
+}
+
+@media (min-width: 1219px) {
+
+}

@@ -1,0 +1,44 @@
+.logo {
+  text-decoration: none;
+}
+
+.logo-image {
+  width: 100%;
+}
+
+.logo-desc {
+  display: block;
+  color: #000;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (min-width: 365px) {
+  .logo-desc {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 465px) {
+  .logo-desc {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 565px) {
+  .logo-desc {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-image {
+    width: 280px;
+  }
+  .logo-desc {
+    font-size: 14px;
+  }
+}
+
+

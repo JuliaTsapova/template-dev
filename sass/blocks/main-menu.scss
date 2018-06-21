@@ -1,0 +1,34 @@
+.main-menu {
+  display: none;
+  list-style: none;
+  width: 100%;
+  background: rgba(0, 0, 0, .1);
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu__link {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: rgba(0, 0, 0, .5);
+  font-weight: 700;
+}
+
+.main-menu__item {
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+@media (min-width: 768px) {
+  .main-menu {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    background: none;
+  }
+  .main-menu__item {
+    border: none;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+}

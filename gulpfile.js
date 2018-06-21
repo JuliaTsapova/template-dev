@@ -117,6 +117,6 @@ gulp.task("serve", function() {
 });
 
 gulp.task("build", function(done) {
-  run("clean", "copy", "style", "sprite", "html", "jsmin", "js",
+  run("clean", "copy", "style", "sprite", "html", "jsmin", "js", "images",
     done);
 });

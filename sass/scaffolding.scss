@@ -11,7 +11,7 @@ html {
 body {
   font-family: "OpenSans", "Arial", sans-serif;
   margin: 0;
-  height: 100vh;
+  //height: 100vh;
 }
 
 .visually-hidden {
@@ -25,4 +25,8 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+img {
+  max-width: 100%;
 }

@@ -1,0 +1,27 @@
+.page-main {
+  padding-top: 210px;
+}
+
+@media (min-width: 430px) {
+  .page-main {
+    padding-top: 240px;
+  }
+}
+
+@media (min-width: 530px) {
+  .page-main {
+    padding-top: 270px;
+  }
+}
+
+@media (min-width: 630px) {
+  .page-main {
+    padding-top: 290px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-main {
+    padding-top: 170px;
+  }
+}

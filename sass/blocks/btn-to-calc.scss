@@ -1,0 +1,12 @@
+.btn-to-calc {
+  margin: 30px auto 14px auto;
+  padding: 8px 14px;
+  line-height: 22px;
+}
+
+@media (min-width: 1024px) {
+  .btn-to-calc {
+    padding: 8px 80px;
+  }
+
+}

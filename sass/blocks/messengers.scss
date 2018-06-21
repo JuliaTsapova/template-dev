@@ -1,0 +1,165 @@
+.messengers {
+  list-style: none;
+  //display: -webkit-box;
+  //display: -ms-flexbox;
+  //display: flex;
+  display: none;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 184px;
+  max-width: 320px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  padding: 0;
+}
+
+.messengers__connect {
+  margin: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.messengers__vk, .messengers__instagram, .messengers__whatsapp {
+  margin-right: 8px;
+}
+
+.messengers__instagram {
+  margin-left: 3px;
+}
+
+.messengers__telegram {
+  margin-right: 10px;
+}
+
+//@media (min-width: 370px) {
+//  .messengers__connect {
+//    width: auto;
+//    margin: 10px 5px 0 0;
+//  }
+//}
+
+.messengers__link {
+  font-size: 38px;
+  position: relative;
+}
+
+.messengers__link span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+}
+
+.messengers__link svg {
+  position: relative;
+  z-index: 10;
+}
+
+.fa-instagram {
+  color: #bf4d89;
+}
+
+.fa-vk {
+  color: #4a76a8;
+  //color: #7740a6;
+}
+
+.fa-whatsapp {
+  color: #3ce34b;
+}
+
+.fa-telegram-plane {
+  color: #3cbae2;
+}
+
+.messengers__instagram span {
+  background-color: #bf4d89;
+}
+
+.messengers__vk span {
+  background-color: #4a76a8;
+}
+
+.messengers__whatsapp span {
+  background-color: #3ce34b;
+}
+
+.messengers__telegram span {
+  background-color: #3cbae2;
+}
+
+.messengers__link:hover svg, .messengers__link:focus svg {
+  color: #fff;
+}
+
+.messengers__link:hover span, .messengers__link:focus span {
+  width: 46px;
+  height: 46px;
+  border-radius: 2.6rem;
+  margin: -23px;
+}
+
+.messengers__link[title="Telegram"]:hover span, .messengers__link[title="Telegram"]:focus span {
+  margin: -23px -23px -23px -21px;
+}
+
+//.messengers__contacts {
+//  display: block;
+//  margin: 5px auto;
+//  padding: 0;
+//  width: 300px;
+//}
+//
+//.messengers__contacts li {
+//  margin-bottom: 3px;
+//  text-align: right;
+//}
+
+.messengers_call-button {
+  width: 174px;
+  padding: 8px 0;
+  //border: 1px solid #355c80;
+  border: none;
+  background: #5b9bd5;
+  display: block;
+  margin-right: 6px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .messengers {
+    //position: absolute;
+    //top: 70px;
+    //right: 10px;
+    margin: 0;
+    max-width: 340px;
+    width: 190px;
+    display: flex;
+  }
+  .messengers__link {
+    font-size: 40px;
+  }
+  .messengers__link:hover span, .messengers__link:focus span {
+    width: 50px;
+    height: 50px;
+    border-radius: 2.6rem;
+    margin: -25px;
+  }
+  .messengers__link[title="Telegram"]:hover span, .messengers__link[title="Telegram"]:focus span {
+    margin: -25px -25px -25px -23px;
+  }
+}
+

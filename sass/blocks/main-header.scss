@@ -1,7 +1,26 @@
 .main-header {
-  display: flex;
+  //display: flex;
   width: 100%;
   position: fixed;
   z-index: 1;
-  flex-basis: auto;
+  //flex-basis: auto
+  padding: 10px 20px;
+  padding-bottom: 0;
+  //max-width: 1024px;
+  background: #fff;
+}
+.main-header__wr {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 140px;
+}
+@media (min-width: 768px) {
+  .main-header__wr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5px 0 10px;
+  }
 }

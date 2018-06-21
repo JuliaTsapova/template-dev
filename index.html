@@ -1,45 +1,235 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
+  <title>Miner</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Test template</title>
 </head>
-
 <body>
-  <div class="page-wrapper">
-    <header class="main-header">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li>
-            <label class="btn" for="show-left" tabindex="0">Show left panel</label>
-          </li>
-          <li>
-            <label class="btn" for="show-right" tabindex="0">Show right panel</label>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="content">
-        <h2 class="visually-hidden">Content block</h2>
-        <section class="page-description">
-          <h2 class="visually-hidden">Page description</h2>
-        </section>
-        <section class="visible-block">
-          <h2 class="visually-hidden">Always visible block</h2>
-        </section>
-        <input class="show-input show-input--left visually-hidden" type="checkbox" name="show-left" id="show-left">
-        <aside class="aside-panel aside-panel--left"></aside>
-        <input class="show-input show-input--right visually-hidden" type="checkbox" name="show-right" id="show-right">
-        <aside class="aside-panel aside-panel--right"></aside>
-      </section>
-    </main>
-    <footer class="main-footer"></footer>
-  </div>
-  <script src="js/script.min.js"></script>
-</body>
+<header class="main-header">
+  <div class="main-header__wr">
+    <a href="index.html" class="logo">
+      <img class="logo-image" src="img/logo.png">
+      <span class="logo-desc">Ваш надежный проводник в мир майнинга</span>
+    </a>
 
+    <p class="desc">Профессиональный майнинг в промышленных объемах<span class="desc__info">GPU, ASIC, ФЕРМЫ под ключ от 30 кВт (от 5 дней)</span>
+    </p>
+
+    <ul class="messengers">
+      <li class="messengers__telegram">
+        <a class="messengers__link" title="Telegram" href="tg://resolve?domain=..."><i
+          class="fab fa-telegram-plane"></i><span></span></a>
+      </li>
+      <li class="messengers__vk">
+        <a class="messengers__link" title="Vkontakte" href="..."><i class="fab fa-vk"></i><span></span></a>
+      </li>
+      <li class="messengers__whatsapp">
+        <a class="messengers__link" title="WhatsApp" href="whatsapp://send?phone=+79324278044"><i
+          class="fab fa-whatsapp"></i><span></span></a>
+      </li>
+      <li class="messengers__instagram">
+        <a class="messengers__link" title="Instagram" href="https://www.instagram.com/.../" target="_blank"><i
+          class="fab fa-instagram"></i><span></span></a>
+      </li>
+      <li class="messengers__call">
+        <button class="messengers_call-button" type="button">Заказать звонок</button>
+      </li>
+    </ul>
+
+    <button type="button" class="show-nav"></button>
+  </div>
+  <nav class="main-navigation">
+    <ul class="main-menu">
+      <li class="main-menu__item"><a class="main-menu__link" href="">Главная</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="">Каталог</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="">О компании</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="">Консалтинг</a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="page-main">
+  <div class="page-wrapper">
+    <div class="top-block">
+    <section class="slider">
+      <img src="http://via.placeholder.com/780x530">
+    </section>
+    <section class="support">
+      <h2>Оставь заявку</h2>
+      <p>И получи полную информацию по наличию и действующим скидкам</p>
+      <form action="" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name">
+        <label for="contact">Телефон или email:</label>
+        <input type="text" id="contact">
+        <button class="btn support-btn">Отправить</button>
+      </form>
+    </section>
+    </div>
+    <section class="brands">
+      <img src="http://via.placeholder.com/220x70">
+      <img src="http://via.placeholder.com/220x70">
+      <img src="http://via.placeholder.com/220x70">
+      <img src="http://via.placeholder.com/220x70">
+      <img src="http://via.placeholder.com/220x70">
+    </section>
+    <button type="button" class="btn btn-to-calc">Калькулятор правильного майнинга</button>
+    <section class="catalog">
+      <section class="catalog__popular">
+        <article class="popular">
+          <img src="http://via.placeholder.com/280x100">
+          <h2>Bitmain Antiminer X3</h2>
+          <table class="popular__table">
+            <tr>
+              <td>Окупаемость:</td>
+              <td>6 - 8 месяцев</td>
+            </tr>
+            <tr>
+              <td>Энергопотребление:</td>
+              <td>1200W</td>
+            </tr>
+            <tr>
+              <td>КПД:</td>
+              <td>80 Bt/1 Gh</td>
+            </tr>
+            <tr>
+              <td>Доход/месяц:</td>
+              <td>$4500</td>
+            </tr>
+            <tr>
+              <td>По предзаказу:</td>
+              <td>от 190 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Стоимость:</td>
+              <td>-</td>
+            </tr>
+          </table>
+          <button class="btn popular__order-btn">Заказать</button>
+        </article>
+        <article class="popular">
+          <img src="http://via.placeholder.com/280x100">
+          <h2>Bitmain Antiminer s9 13,5 Th/s</h2>
+          <table class="popular__table">
+            <tr>
+              <td>Окупаемость:</td>
+              <td>5 месяцев</td>
+            </tr>
+            <tr>
+              <td>Энергопотребление:</td>
+              <td>1500 Ватт + 7%</td>
+            </tr>
+            <tr>
+              <td>КПД:</td>
+              <td>0,098 Дж/Гх + 7%</td>
+            </tr>
+            <tr>
+              <td>Доход/месяц:</td>
+              <td>$600</td>
+            </tr>
+            <tr>
+              <td>По предзаказу:</td>
+              <td>135 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Стоимость:</td>
+              <td>100 000 руб.</td>
+            </tr>
+          </table>
+          <button class="btn popular__order-btn">Заказать</button>
+        </article>
+        <article class="popular">
+          <img src="http://via.placeholder.com/280x100">
+          <h2>Bitmain Antiminer X3</h2>
+          <table class="popular__table">
+            <tr>
+              <td>Окупаемость:</td>
+              <td>6 - 8 месяцев</td>
+            </tr>
+            <tr>
+              <td>Энергопотребление:</td>
+              <td>1200W</td>
+            </tr>
+            <tr>
+              <td>КПД:</td>
+              <td>80 Bt/1 Gh</td>
+            </tr>
+            <tr>
+              <td>Доход/месяц:</td>
+              <td>$4500</td>
+            </tr>
+            <tr>
+              <td>По предзаказу:</td>
+              <td>от 190 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Стоимость:</td>
+              <td>-</td>
+            </tr>
+          </table>
+          <button class="btn popular__order-btn">Заказать</button>
+        </article>
+        <article class="popular">
+          <img src="http://via.placeholder.com/280x100">
+          <h2>Bitmain Antiminer s9 13,5 Th/s</h2>
+          <table class="popular__table">
+            <tr>
+              <td>Окупаемость:</td>
+              <td>5 месяцев</td>
+            </tr>
+            <tr>
+              <td>Энергопотребление:</td>
+              <td>1500 Ватт + 7%</td>
+            </tr>
+            <tr>
+              <td>КПД:</td>
+              <td>0,098 Дж/Гх + 7%</td>
+            </tr>
+            <tr>
+              <td>Доход/месяц:</td>
+              <td>$600</td>
+            </tr>
+            <tr>
+              <td>По предзаказу:</td>
+              <td>135 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Стоимость:</td>
+              <td>100 000 руб.</td>
+            </tr>
+          </table>
+          <button class="btn popular__order-btn">Заказать</button>
+        </article>
+        <section class="popular__catalog">
+          <p>Каталог товаров:</p>
+          <ul>
+            <li><a href="">Asic</a></li>
+            <li><a href="">Видеокарты</a></li>
+            <li><a href="">Блоки питания</a></li>
+            <li><a href="">Комплектующие для GPU ригов</a></li>
+            <li><a href="">Услуги ремонта и диагностики</a></li>
+          </ul>
+        </section>
+        <section class="popular__preview">
+          <ul>
+            <li>Профессиональная диагностика</li>
+            <li>Ремонт и обслуживание оборудования для майнинга</li>
+          </ul>
+          <a href="" class="btn popular__price-btn">Прайс на услуги</a>
+        </section>
+      </section>
+      </button>
+    </section>
+  </div>
+</main>
+<footer>
+
+</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/flipclock.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
 </html>

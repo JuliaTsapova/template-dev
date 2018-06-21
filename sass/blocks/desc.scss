@@ -1,0 +1,19 @@
+.desc {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+}
+
+.desc__info {
+  font-weight: 400;
+  text-transform: none;
+  font-size: 11px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .desc {
+    width: 300px;
+    margin: 0;
+  }
+}

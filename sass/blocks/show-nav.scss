@@ -1,0 +1,32 @@
+.show-nav {
+  width: 50px;
+  height: 5px;
+  background: #b9b9b9;
+  border: none;
+  margin: 15px 0;
+  position: absolute;
+  bottom: -4px;
+  right: 30px;}
+
+.show-nav::before, .show-nav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 5px;
+  background: #b9b9b9;
+}
+
+.show-nav::before {
+  top: -12px;
+}
+
+.show-nav::after {
+  bottom: -12px;
+}
+@media (min-width: 768px) {
+  .show-nav {
+    display: none;
+  }
+}

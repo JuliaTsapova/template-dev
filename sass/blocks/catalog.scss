@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+  .catalog__popular {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}

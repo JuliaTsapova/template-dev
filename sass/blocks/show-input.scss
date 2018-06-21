@@ -1,9 +1,0 @@
-.show-input {
-  &--left:checked ~ .aside-panel--left {
-    left: 0;
-  }
-
-  &--right:checked ~ .aside-panel--right {
-    right: 0;
-  }
-}
